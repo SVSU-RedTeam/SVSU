@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/SVSURedTeam.github.io/',
+  base: '/SVSU/',
   plugins: [react()],
   resolve: {
     alias: {
