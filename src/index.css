@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #f6f7f9;
+  background: #0f1117;
+  font-family: 'DM Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #0f1117; }
+button, input, textarea { font: inherit; }
+::selection { background: rgba(232, 56, 79, .35); color: white; }
+
+@layer utilities {
+  .font-mono-display { font-family: 'Space Mono', monospace; }
+  .text-balance { text-wrap: balance; }
+  .grid-pattern {
+    background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+  .red-glow { box-shadow: 0 0 42px rgba(232, 56, 79, .22); }
+  .red-glow-hover { transition: box-shadow .3s ease, border-color .3s ease, transform .3s ease; }
+  .red-glow-hover:hover { box-shadow: 0 0 34px rgba(232, 56, 79, .2); border-color: rgba(232, 56, 79, .7); transform: translateY(-4px); }
+}
